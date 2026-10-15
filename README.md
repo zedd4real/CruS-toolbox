@@ -10,7 +10,7 @@ Requires the [CRUELTY SQUAD MOD LOADER](https://github.com/crustyrashky/crus-mod
 |-----|---------|
 | F5  | Toggle enemy AI (freeze / unfreeze all enemies) |
 | F6  | Toggle enemy collision (walk through enemies) |
-| F7  | Kill all enemies |
+| F7  | Remove all NPCs |
 | F8  | God mode (best-effort) |
 | F9  | Free camera (noclip-style fly) |
 | F10 | Third-person camera (mouse wheel zooms) |
