@@ -1,0 +1,7 @@
+{
+    "name": "CruS Toolbox",
+    "author": "speedrun community tool",
+    "version": "0.1.0",
+    "description": "Debug toolbox: toggle enemy AI/collision, kill all enemies, god mode, free camera, time scale, debug HUD.",
+    "init": "res://MOD_CONTENT/CruS Toolbox/init.gd"
+}
