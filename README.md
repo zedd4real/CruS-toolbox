@@ -14,8 +14,12 @@ Requires the [CRUELTY SQUAD MOD LOADER](https://github.com/crustyrashky/crus-mod
 | F8  | God mode (best-effort) |
 | F9  | Free camera (noclip-style fly) |
 | F10 | Third-person camera (mouse wheel zooms) |
+| V   | Noclip (fly freely; player follows; can shoot) |
 | F1  | Teleport to next objective NPC |
 | F2 / F3 / F4 | Time scale slower / reset / faster |
+| F11 | Difficulty dropdown (Divine Light / Flesh Automaton / Power In Misery / Hope Eradicated; persists to save) |
+| B   | NPC spawn menu (spawn any NPC at the crosshair; `+` / `-` resize) |
+| H   | Enemy outline (red outline on hostile NPCs; experimental) |
 
 A HUD in the top-left corner shows the current state of each feature, plus the player's position / health / enemy count.
 
@@ -54,6 +58,7 @@ powershell -ExecutionPolicy Bypass -File package.ps1
 
 - Enemy / objective-NPC identification is heuristic (scene filename + the `objective` flag on `EnemyHandler`). Some enemy types may not be detected.
 - God mode (F8) keeps the player's `health` topped up each frame; it may not cover every damage source.
+- Enemy outline (H) is experimental: it outlines most enemy types, but some glb-based enemies (zombie / fleshrat / knifelord) currently fall back to a hollow outline.
 
 ---
 
@@ -73,8 +78,12 @@ powershell -ExecutionPolicy Bypass -File package.ps1
 | F8 | 无敌模式 |
 | F9 | 自由相机（noclip 式飞行） |
 | F10 | 第三人称（滚轮缩放） |
+| V | noclip 飞行（玩家跟随、可开枪） |
 | F1 | 传送到目标 NPC |
 | F2 / F3 / F4 | 时间缩放（慢 / 重置 / 快） |
+| F11 | 难度下拉菜单（Divine Light / Flesh Automaton / Power In Misery / Hope Eradicated；写入存档） |
+| B | NPC 生成菜单（准星处生成任意 NPC；`+` / `-` 缩放） |
+| H | 敌人描边（敌对 NPC 红色描边；实验性） |
 
 左上角的 HUD 显示每个功能的当前状态，以及玩家位置 / 血量 / 敌人数量。
 
@@ -113,3 +122,4 @@ powershell -ExecutionPolicy Bypass -File package.ps1
 
 - 敌人 / 目标 NPC 的识别是启发式的（场景文件名 + `EnemyHandler` 上的 `objective` 标志），部分敌人类型可能识别不到。
 - 无敌（F8）每帧把玩家血量顶满，不一定覆盖所有伤害来源。
+- 敌人描边（H）为实验性：能描边大多数敌人，但部分 glb 模型的敌人（zombie / fleshrat / knifelord）目前退化为空心描边。
